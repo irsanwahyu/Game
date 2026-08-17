@@ -1,0 +1,72 @@
+body {
+  font-family: arial, sans-serif;
+  font-weight: bold;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(bg.jpg);
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: hwb(0 100% 0%)
+  
+}
+
+hr {
+  color: black;
+}
+
+.choiches {
+  margin-bottom: 30px;
+}
+
+.choiches button {
+  font-size: 4.5rem;
+  min-width: 100px;
+  margin: 0 10px;
+  border-radius: 50%;
+  background-color: hwb(180 23% 7%);
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.choiches button:hover {
+  background-color: navy;
+  
+}
+
+.irsann {
+  padding: 100px auto;
+  border: 5px double black;
+  background-color: blue;
+  color: white;
+}
+
+#playerDisplay, #computerDisplay {
+  font-size: 2.5rem;
+}
+
+#resultDisplay {
+  font-size: 3rem;
+  margin: 30px 0px;
+}
+
+#scoreDisplay {
+    margin-top: 20px;
+    padding: 12px 20px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+@keyframes shake {
+    0% { transform: translate(0, 0); }
+    20% { transform: translate(-10px, 5px); }
+    40% { transform: translate(10px, -5px); }
+    60% { transform: translate(-10px, -5px); }
+    80% { transform: translate(10px, 5px); }
+    100% { transform: translate(0, 0); }
+}
