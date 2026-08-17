@@ -1,0 +1,92 @@
+body {
+  font-family: arial, sans-serif;
+  font-weight: bold;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(bg.jpg);
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: hwb(0 100% 0%)
+  
+}
+
+
+.choices {
+    margin-bottom: 5.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+    z-index: 10;
+}
+
+choiches {
+  margin-bottom: 30px;
+}
+
+.choiches button {
+  font-size: 4.5rem;
+  min-width: 100px;
+  margin: 0 10px;
+  border-radius: 50%;
+  background-color: hwb(180 23% 7%);
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.choices button:hover {
+    background-color: navy;
+    transform: scale(1.1);
+}
+
+.irsann {
+  padding: 100px auto;
+  border: 5px double black;
+  background-color: blue;
+  color: white;
+}
+
+#playerDisplay, #computerDisplay {
+  font-size: 2.5rem;
+}
+
+#resultDisplay {
+  font-size: 3rem;
+  margin: 30px 0px;
+}
+
+#scoreDisplay {
+    margin: 0 auto;
+    padding: 10px;
+    border: 3px solid black;
+    border-top: none;
+    background-color: hwb(0 100% 0%);
+    color: lab(0% 0 0);
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    width: 492px;
+    box-sizing: border-box;
+}
+
+.win-effect {
+    animation: menang 1s ease;
+}
+
+@keyframes menang {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(2);
+    }
+}
